@@ -7,25 +7,46 @@ El objetivo de este programa es el de llevar el registro de ganancias al mismo t
 Los objetos que planeo usar son:
 
 Personal:
-	VenderComida()
-	VenderTiquets()
-	ServirBebida()
-	ServirComida()
-Máquina de peluches:
-	DarPeluche()
-	NoDarPeluche	
-Clientes:
-	Comprar()
-Cartelera:
-	AñadirPelicula()
-	RetirarPelícula()
-SnackBar:
-	RestockComida()
 
+	VenderComida()
+	
+	VenderTiquets()
+	
+	ServirBebida()
+	
+	ServirComida()
+	
+Máquina de peluches:
+
+	DarPeluche()
+	
+	NoDarPeluche	
+	
+Clientes:
+
+	Comprar()
+	
+Cartelera:
+
+AñadirPelicula()
+
+	RetirarPelícula()
+	
+SnackBar:
+
+	RestockComida()
+	
 Salas:
+
 Asientos:
+
 	Estado: Ocupado / libre (Usar una matriz)
+	
 Palomitas:
+
 	Tamaño
+	
 	Sabor
+	
 	Precio
+	
