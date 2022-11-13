@@ -12,15 +12,12 @@ Personal:
 	
 	VenderTiquets()
 	
-	ServirBebida()
-	
-	ServirComida()
 	
 Máquina de peluches:
 
-	DarPeluche()
+	AflojarGarra()
 	
-	NoDarPeluche	
+	ApretarGarra()	
 	
 Clientes:
 
@@ -30,7 +27,7 @@ Cartelera:
 
 AñadirPelicula()
 
-	RetirarPelícula()
+RetirarPelícula()
 	
 SnackBar:
 
@@ -38,15 +35,22 @@ SnackBar:
 	
 Salas:
 
-Asientos:
+	Asientos:
 
-	Estado: Ocupado / libre (Usar una matriz)
+		Estado: Ocupado / libre (Usar una matriz)
 	
 Palomitas:
 
-	Tamaño
+	Cantidad
 	
 	Sabor
 	
 	Precio
 	
+	
+	
+	Diagrama:
+	
+
+	
+
