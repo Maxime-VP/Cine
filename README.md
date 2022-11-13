@@ -49,8 +49,6 @@ Palomitas:
 	
 	
 	
-	Diagrama:
-	
 
 	
 
