@@ -18,7 +18,7 @@ int main() {
 
     string eleccion;
 
-    cout << " \n Menu: \n Palomitas 90$ \n Nachos 40$\n Refresco 30$ \n Combo 140$ \n (El combo puede llevar refresco o Icee) \n" << endl;
+    cout << " \n Menu: \n Palomitas 90$ \n Nachos 40$\n Refresco 30$ \n Combo 140$ \n" << endl;
     double CostoFinal;
     CostoFinal = 0;
 
