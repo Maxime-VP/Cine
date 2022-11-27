@@ -14,30 +14,30 @@ El programa solicitara al usuario si quiere pedir un combo:
 
 Al decir que si:
 
-  -Llama a una función para las clases palomitas, nachos y bebida que le piden al usuario los valores deseados.
+  	-Llama a una función para las clases palomitas, nachos y bebida que le piden al usuario los valores deseados.
   
--Tras concluir con estas funciones agregará el costo del combo al costo final y le preguntará al usuario si desea pedir algo más. 
+	-Tras concluir con estas funciones agregará el costo del combo al costo final y le preguntará al usuario si desea pedir algo más. 
 
--Si escribe que si, el programa solicitará si se quiere pedir un combo.
+	-Si escribe que si, el programa solicitará si se quiere pedir un combo.
 
--Si escribe que no, el programa desplegará el costo acumulado de todo lo que haya pedido
+	-Si escribe que no, el programa desplegará el costo acumulado de todo lo que haya pedido
 
 Al decir que no:
 
-  -Solicita al usuario si quiere palomitas:
+  	-Solicita al usuario si quiere palomitas:
   
--Pide al usuario los valores deseados y suma el costo del artículo al costo final
+		-Pide al usuario los valores deseados y suma el costo del artículo al costo final
 
-  -Solicita al usuario si quiere nachos:
+  	-Solicita al usuario si quiere nachos:
   
-	-Pide al usuario los valores deseados y suma el costo del artículo al costo final
+		-Pide al usuario los valores deseados y suma el costo del artículo al costo final
 	
-  -Solicita al usuario si quiere refresco:
+ 	 -Solicita al usuario si quiere refresco:
   
--Pide al usuario los valores deseados y suma el costo del artículo al costo final
+		-Pide al usuario los valores deseados y suma el costo del artículo al costo final
 
-  -Solicita al usuario si quiere algo más:
+  	-Solicita al usuario si quiere algo más:
   
--Si escribe que si, el programa solicitará si se quiere pedir un combo.
+		-Si escribe que si, el programa solicitará si se quiere pedir un combo.
 
--Si escribe que no, el programa desplegará el costo acumulado de todo lo que haya pedido
+		-Si escribe que no, el programa desplegará el costo acumulado de todo lo que haya pedido
