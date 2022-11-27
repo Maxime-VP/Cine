@@ -18,9 +18,9 @@ Al decir que si:
   
 	-Tras concluir con estas funciones agregará el costo del combo al costo final y le preguntará al usuario si desea pedir algo más. 
 
-	-Si escribe que si, el programa solicitará si se quiere pedir un combo.
+		-Si escribe que si, el programa solicitará si se quiere pedir un combo.
 
-	-Si escribe que no, el programa desplegará el costo acumulado de todo lo que haya pedido
+		-Si escribe que no, el programa desplegará el costo acumulado de todo lo que haya pedido
 
 Al decir que no:
 
