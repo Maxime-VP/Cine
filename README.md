@@ -8,12 +8,3 @@ El objetivo de este programa es el de llevar el registro de el costo de los prdu
 Para ello se emplearán dos tipos de objeto snack y bebida, cada uno con dos subclases (Palomitas, Nachos) y (Icee, Refrescos) respectivamente.
 
 Revisa el diagrama de clases para ver cómo interactuan los distintos objetos a implementar.
-
-Para correr el código puedes entrar al siguiente link
-https://onlinegdb.com/vsDeNbbZV
-
-	
-	
-
-	
-
