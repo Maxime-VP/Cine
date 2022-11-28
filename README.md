@@ -8,6 +8,7 @@ Revisa el diagrama de clases para ver cómo interactúan los distintos objetos a
 
 
 Funcionamiento:
+
 El programa inicia mostrando un menu y solicita al usuario elegir una opcion entre 1 y 5: Elegir opciones no válidas hará que solicite de nuevo el valor.
 •	1 Palomitas
 
