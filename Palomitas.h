@@ -1,71 +1,43 @@
+#pragma once
 #include <iostream>
 using namespace std;
+#include "Snack.h" //incluye la clase Snack.h
 
-class Palomitas {
-private: //atributos
+class Palomitas: public Snack { //crea clase, : public Snack hace que herede los atributos de Snack
+private:
+	string sabor; //atributos
+	string tamano;
 
-    string sabores;
-    double costo;
+public:
+	Palomitas(double, string, string); //constructor, se incluye double pues es el costo que hereda de Snack.h
+	Palomitas();
+	string getSabor(); //getters, regresan el valor del objeto para los par√°metros especificados
+	string getTamano();
+	void setSabor(string);
 
-public: //metodos
-    Palomitas(string, double); //constructor
-    double getCosto();
-    void SetSabores();
-    string getSabor();
 };
 
-Palomitas::Palomitas(string _sabores, double _costo) { //constructor
-    sabores = "natural";
-    costo = _costo;
+Palomitas::Palomitas(double _costo, string _sabor, string _tamano) :Snack(_costo) { //constructor que recibe valores del usuario
+	sabor = _sabor;
+	tamano = _tamano;
+	
 }
 
-double Palomitas::getCosto() { //regresa el costo de el producto
-    return costo;
-}
+Palomitas::Palomitas():Snack() { //constructor hardcodeado, es un default por lo que no recibe valores
 
-void Palomitas::SetSabores() { // permite dar un valor al sabor de las palomitas
-    string newSabor;
-    cout << "Ingresa el sabor de palomitas (mantequilla, natural, caramelo)" << endl;
-    int a;
-    a = 0;
-    while (a == 0) { //Valida que se use un sabor v·lido
-        cin >> newSabor;
-        if (newSabor == "mantequilla" or newSabor == "natural" or newSabor == "caramelo" or newSabor == "Mantequilla" or newSabor == "Natural" or newSabor == "Caramelo") {
-            sabores = newSabor;
-            a = 1;
-        }
-        else { // avisa que hubo un error y perite que el ciclo continue
-            cout << "Sabor no v·lido, favor de ingresar un nuevo sabor" << endl;
-            a = 0;
-        }
-    }
+	sabor = "Mantequilla";
+	tamano = "Grande";
 
 }
 
-string Palomitas::getSabor() { //regresa el sabor
-    return sabores;
+string Palomitas::getSabor() { //retorna el sabor
+	return sabor;
 }
 
-int SaborPalomitas() //manda a pedir el costo y el sabor de las palomitas y lo muestra al consumidor
-{
-
-    string Sabor;
-    double precio;
-    precio = 89;
-
-    Sabor = "Naturales";
-
-    Palomitas P1 = Palomitas(Sabor, precio);
-
-    precio = P1.getCosto();
-
-    P1.SetSabores();
-    Sabor = P1.getSabor();
-
-
-    cout << "El sabor de las palomitas es " << Sabor << endl;
-    cout << "El precio de las palomitas es " << precio << endl;
-    return 0;
+string Palomitas::getTamano() {
+	return tamano;
 }
-#pragma once
-#pragma once
+
+void Palomitas:: setSabor(string _sabor) {
+	sabor = _sabor;
+}
