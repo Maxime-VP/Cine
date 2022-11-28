@@ -7,37 +7,36 @@ Para ello se emplearán tres clases (combo, bebida, snack) y dos subclases (palo
 Revisa el diagrama de clases para ver cómo interactúan los distintos objetos a implementar.
 
 
-
 Funcionamiento:
+El programa inicia mostrando un menu y solicita al usuario elegir una opcion entre 1 y 5: Elegir opciones no válidas hará que solicite de nuevo el valor.
+•	1 Palomitas
+
+	o	Pide al usuario sabor y tamaño de las palomitas, suma el costo de las palomitas al costo total (depe del tamaño) y pide si quiere hacer algo más
 	
-El programa solicitara al usuario si quiere pedir un combo:
+			Si contesta 1 (sí) vuelve al inicio conservando el costo sumado
+		
+			Si contesta 2 (no) el programa termina e imprime el costo acumulado
+		
+•	2: Nachos
 
-Al decir que si:
+	o	Pide al usuario si quiere o no queso y si quiere o no chile con sus nachos, imprime la decisión y suma el costo de los nachos al costo total.
 
-  	-Llama a una función para las clases palomitas, nachos y bebida que le piden al usuario los valores deseados.
-  
-	-Tras concluir con estas funciones agregará el costo del combo al costo final y le preguntará al usuario si desea pedir algo más. 
+•	3: Bebida
 
-		-Si escribe que si, el programa solicitará si se quiere pedir un combo.
+	o	Pide al usuario tamaño de la bebida, suma el costo de la bebida al costo total dependiendo el tamaño y pide si quiere hacer algo más
 
-		-Si escribe que no, el programa desplegará el costo acumulado de todo lo que haya pedido
+			Si contesta 1 (sí) vuelve al inicio conservando el costo sumado
 
-Al decir que no:
+			Si contesta 2 (no) el programa termina e imprime el costo acumulado
 
-  	-Solicita al usuario si quiere palomitas:
-  
-		-Pide al usuario los valores deseados y suma el costo del artículo al costo final
+•	4: Combo
 
-  	-Solicita al usuario si quiere nachos:
-  
-		-Pide al usuario los valores deseados y suma el costo del artículo al costo final
-	
- 	 -Solicita al usuario si quiere refresco:
-  
-		-Pide al usuario los valores deseados y suma el costo del artículo al costo final
+	o	Pide el sabor de las palomitas, si quiere queso y/o chile en sus nachos y agrega el costo del combo al costo total,luego pregunta si quiere hacer algo más.
 
-  	-Solicita al usuario si quiere algo más:
-  
-		-Si escribe que si, el programa solicitará si se quiere pedir un combo.
+			Si contesta 1 (sí) vuelve al inicio conservando el costo sumado
 
-		-Si escribe que no, el programa desplegará el costo acumulado de todo lo que haya pedido
+			Si contesta 2 (no) el programa termina e imprime el costo acumulado
+
+•	5: Terminar
+
+	o	Muestra el total acumulado y termina el programa
