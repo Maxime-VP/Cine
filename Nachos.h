@@ -1,72 +1,44 @@
-
+#pragma once
 #include <iostream>
 using namespace std;
-class Nachos {
-private: //atributos
+#include "Snack.h" //incluye el c√≥digo de Snack.h
 
-    int queso;
-    double costo;
+class Nachos : public Snack { //hereda el atributo costo de la clase Snack
+private:
+	string queso; //atributos
+	string chile;
 
-public: //metodos
-    Nachos(int, double); //constructor
-    double getCosto();
-    void SetQueso();
-    int getQueso();
+public:
+	Nachos(double, string, string); //constructor
+	Nachos();
+	string getQueso(); //getters retornan valores del objeto al main
+	string getChile();
+	void setChile(string);
+	void setQueso(string);
 };
 
-Nachos::Nachos(int _queso, double _costo) { //constructor
-    queso = 1;
-    costo = _costo;
-}
-
-double Nachos::getCosto() { //regresa costo
-    return costo;
-}
-
-void Nachos::SetQueso() { // permite ingresar si se desea o no queso
-    int newQueso;
-    newQueso = 1;
-    cout << "Ingresa 1 para aÒadir queso" << endl;
-    cin >> newQueso;
-    queso = newQueso;
-
+Nachos::Nachos(double _costo, string _queso, string _chile) :Snack(_costo) { //constructor con valores del usuario
+	queso = _queso;
+	chile = _chile;
 
 }
-
-int Nachos::getQueso() { // regresa si tiene o no queso
-    return queso;
+Nachos::Nachos(): Snack() {
+	queso = "con queso";
+	chile = "sin chile";
 }
 
-int QuesoNachos() // verifica si tienen queso e imprime el precio
-{
-
-    int queso;
-    double precio;
-    precio = 40;
-
-    queso = 0;
-
-    Nachos N1 = Nachos(queso, precio);
-
-    double preciofin;
-    precio = N1.getCosto();
-
-    N1.SetQueso();
-
-    string Tienequeso;
-    queso = N1.getQueso();
-
-    string conqueso;
-    if (queso == 1) {
-        Tienequeso = "con queso";
-    }
-    else {
-        Tienequeso = "sin queso";
-    }
-
-    cout << "Unos nachos " << Tienequeso << endl;
-    cout << "El precio de los nachos es " << precio << endl;
-    return 0;
+string Nachos::getQueso() { //retorna el valor de queso
+	return queso;
 }
 
+string Nachos::getChile() {
+	return chile;
+}
 
+void Nachos::setQueso(string _queso) {
+	queso = _queso;
+}
+
+void Nachos::setChile(string _chile) {
+	chile = _chile;
+}
