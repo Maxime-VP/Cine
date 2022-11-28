@@ -10,6 +10,7 @@ Revisa el diagrama de clases para ver cómo interactúan los distintos objetos a
 Funcionamiento:
 
 El programa inicia mostrando un menu y solicita al usuario elegir una opcion entre 1 y 5: Elegir opciones no válidas hará que solicite de nuevo el valor.
+
 •	1 Palomitas
 
 	o	Pide al usuario sabor y tamaño de las palomitas, suma el costo de las palomitas al costo total (depe del tamaño) y pide si quiere hacer algo más
